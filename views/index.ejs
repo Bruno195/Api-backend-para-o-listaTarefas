@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="POST" action="/form" style="display: flex; background-color: black; padding: 20px; flex-direction: column; justify-content: center; align-items: center;" >
+        <input type="text" name="email" id="email" placeholder="email" value="<%= email %>"><br>
+       <label style="color: red;"><%= emailError %></label> <br>
+        
+        <input type="text" name="nome" id="nome" placeholder="nome"> <br>
+  
+        <label style="color: red;"><%= nomeError %></label> <br>
+        <input type="number" name="pontos" id="pontos" placeholder="pontos"><br>
+        <label style="color: red;"><%= pontosError %></label>
+        <br>
+        <button type="submit" style="border-radius: 20px; background-color: blanchedalmond; width: 200px; font-style: oblique; font-size: medium;">Enviar</button>
+    </form>
+
+
+
+</body>
+</html>
